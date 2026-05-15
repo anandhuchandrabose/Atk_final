@@ -1,30 +1,17 @@
-import { useEffect, useRef } from 'react'
-
 export default function Hero() {
-  const mediaRef = useRef(null)
-
-  useEffect(() => {
-    const media = mediaRef.current
-    if (!media) return
-    let raf = 0
-    const onScroll = () => {
-      if (raf) return
-      raf = requestAnimationFrame(() => {
-        const y = Math.max(0, window.scrollY)
-        if (y < window.innerHeight * 1.2) {
-          media.style.transform = `translate3d(0, ${y * 0.25}px, 0) scale(${1 + Math.min(y, 600) * 0.00015})`
-        }
-        raf = 0
-      })
-    }
-    document.addEventListener('scroll', onScroll, { passive: true })
-    onScroll()
-    return () => document.removeEventListener('scroll', onScroll)
-  }, [])
-
   return (
     <section className="hero" id="top" data-screen-label="01 Hero">
-      <div className="hero__media" ref={mediaRef} aria-hidden="true"></div>
+      <div className="hero__media" aria-hidden="true">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="hero__video"
+        >
+          <source src="/assets/WEBSITEHERO.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className="hero__veil" aria-hidden="true"></div>
 
       <div className="wrap hero__inner">
