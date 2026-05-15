@@ -1,3 +1,5 @@
+import RevealHeadline from './RevealHeadline'
+
 const testimonials = [
   {
     quote: 'Karate gave me a quiet mind in a loud world.',
@@ -24,7 +26,9 @@ export default function Testimonials() {
     <section className="testimonials" id="testimonials" data-screen-label="06 Testimonials">
       <div className="wrap">
         <div className="testimonials__head">
-          <h2 className="testimonials__title display reveal">What our<br />students say</h2>
+          <RevealHeadline tag="h2" className="testimonials__title display">
+            What our students say
+          </RevealHeadline>
           <p className="testimonials__lede reveal reveal--delay-1">
             Every black belt was once a beginner who chose not to give up. Hear from those walking the way.
           </p>

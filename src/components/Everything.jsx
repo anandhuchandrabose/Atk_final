@@ -1,3 +1,5 @@
+import RevealHeadline from './RevealHeadline'
+
 const cards = [
   { src: '/assets/dojo.jpg', alt: 'Students training in formation at the dojo', tag: 'DOJOS', num: '60+', label: 'Dojos', delay: '' },
   { src: '/assets/team.jpg', alt: 'Athletes sparring at the Attingal Karate field', tag: 'STUDENTS', num: '10000+', label: 'Students', delay: 'reveal--delay-1' },
@@ -8,7 +10,9 @@ export default function Everything() {
   return (
     <section className="everything" id="everything" data-screen-label="03 Programs">
       <div className="wrap">
-        <h2 className="everything__title display reveal">Everything you need<br />to walk the way</h2>
+        <RevealHeadline tag="h2" className="everything__title display">
+          Everything you need to walk the way
+        </RevealHeadline>
         <div className="everything__grid">
           {cards.map((card, i) => (
             <div key={i} className={`stat-card reveal ${card.delay}`}>

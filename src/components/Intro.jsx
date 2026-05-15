@@ -1,8 +1,12 @@
+import RevealHeadline from './RevealHeadline'
+
 export default function Intro() {
   return (
     <section className="intro" id="way" data-screen-label="02 The Way">
       <div className="wrap">
-        <h2 className="intro__title display reveal">The way of <br />the empty hand</h2>
+        <RevealHeadline tag="h2" className="intro__title display">
+          The way of the empty hand
+        </RevealHeadline>
         <p className="intro__body body reveal reveal--delay-1">
           Karate is more than combat. It is the lifelong pursuit of discipline, balance and self-mastery — where the body grows stronger, the mind becomes calmer and the spirit awakens.
         </p>
