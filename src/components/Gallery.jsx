@@ -155,8 +155,8 @@ export default function Gallery() {
         scrollTrigger: {
           trigger:       section,
           start:         'top top',
-          end:           '+=600',
-          scrub:         0.5,
+          end:           '+=250',
+          scrub:         0.3,
           pin:           true,
           anticipatePin: 1,
           onEnter: () => {
@@ -180,7 +180,7 @@ export default function Gallery() {
 
       tl.to(tiles, {
         opacity:  1,
-        stagger:  { amount: 0.4, from: 'center' },
+        stagger:  { amount: 0.15, from: 'center' },
       }, 0)
 
       ScrollTrigger.refresh()
