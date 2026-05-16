@@ -3,7 +3,7 @@ import RevealWords from './RevealWords'
 const blocks = [
   {
     badge: '01 / REAL DISCIPLINE',
-    src: '/assets/dojo.jpg',
+    src: '/assets/sambath1.jpg',
     alt: 'Students in formation at the dojo',
     tag: '空手道 · KARATE-DŌ',
     heading: 'Real discipline. Real transformation.',
@@ -30,7 +30,7 @@ const blocks = [
   },
   {
     badge: '04 / ATTINGAL KARATE TEAM',
-    src: '/assets/dojo.jpg',
+    src: '/assets/journey.jpg',
     alt: 'Group training session at the dojo',
     tag: 'ATTINGAL KARATE TEAM',
     heading: 'Stronger together, united through karate.',

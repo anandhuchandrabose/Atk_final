@@ -6,22 +6,22 @@ gsap.registerPlugin(ScrollTrigger)
 
 const BEFORE = [
   { src: '/assets/grid.jpg',               alt: '' },
-  { src: '/assets/team.jpg',               alt: '' },
-  { src: '/assets/dojo.jpg',               alt: '' },
-  { src: '/assets/sensei.jpg',             alt: '' },
-  { src: '/assets/modern-disciplines.jpg', alt: '' },
-  { src: '/assets/dojo.jpg',               alt: '' },
-  { src: '/assets/grid.jpg',               alt: '' },
+  { src: '/assets/112.jpg',               alt: '' },
+  { src: '/assets/118.jpg',               alt: '' },
+  { src: '/assets/113.jpg',             alt: '' },
+  { src: '/assets/114.jpg', alt: '' },
+  { src: '/assets/115.jpg',            alt: '' },
+  { src: '/assets/116.jpg',               alt: '' },
 ]
 
 const AFTER = [
-  { src: '/assets/sensei.jpg',             alt: '' },
+  { src: '/assets/117.jpg',             alt: '' },
   { src: '/assets/team.jpg',               alt: '' },
   { src: '/assets/modern-disciplines.jpg', alt: '' },
-  { src: '/assets/team.jpg',               alt: '' },
+  { src: '/assets/hero.png',               alt: '' },
   { src: '/assets/grid.jpg',               alt: '' },
   { src: '/assets/dojo.jpg',               alt: '' },
-  { src: '/assets/sensei.jpg',             alt: '' },
+  { src: '/assets/journey.jpg',            alt: '' },
 ]
 
 export default function Gallery() {

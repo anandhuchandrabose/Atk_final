@@ -6,7 +6,7 @@ const cards = [
   { src: '/assets/sensei.jpg', alt: 'Mid-kick portrait', label: 'KUMITE' },
   { src: '/assets/modern-disciplines.jpg', alt: 'Tying the belt', label: 'THE BLACK BELT' },
   { src: '/assets/grid.jpg', alt: 'Outdoor practice', label: 'OUTDOOR TRAINING' },
-  { src: '/assets/team.jpg', alt: 'Field training', label: 'CHAMPIONSHIP' },
+  { src: '/assets/hero.png', alt: 'Field training', label: 'CHAMPIONSHIP' },
 ]
 
 export default function Community() {

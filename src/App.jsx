@@ -10,6 +10,7 @@ import Community from './components/Community'
 import Testimonials from './components/Testimonials'
 import Sensei from './components/Sensei'
 import Journey from './components/Journey'
+import Coaches from './components/Coaches'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -45,6 +46,7 @@ export default function App() {
       <Sensei />
       <Marquee variant="cream" />
       <Journey />
+      <Coaches />
       <Footer />
     </>
   )
