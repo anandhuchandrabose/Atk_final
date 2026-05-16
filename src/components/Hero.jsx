@@ -58,7 +58,7 @@ export default function Hero() {
     <section className="hero" id="top" data-screen-label="01 Hero">
       <div className="hero__media" aria-hidden="true">
         <video autoPlay muted loop playsInline className="hero__video">
-          <source src="/assets/hero.mp4" type="video/mp4" />
+          <source src="/assets/hero12.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="hero__veil" aria-hidden="true"></div>
