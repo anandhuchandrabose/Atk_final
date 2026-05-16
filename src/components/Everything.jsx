@@ -1,9 +1,9 @@
 import RevealHeadline from './RevealHeadline'
 
 const cards = [
-  { src: '/assets/dojo.jpg', alt: 'Students training in formation at the dojo', tag: 'DOJOS', num: '60+', label: 'Dojos', delay: '' },
+  { src: '/assets/team2.jpg', alt: 'Students training in formation at the dojo', tag: 'DOJOS', num: '60+', label: 'Dojos', delay: '' },
   { src: '/assets/team.jpg', alt: 'Athletes sparring at the Attingal Karate field', tag: 'STUDENTS', num: '10000+', label: 'Students', delay: 'reveal--delay-1' },
-  { src: '/assets/modern-disciplines.jpg', alt: 'Karateka in white gi at sunrise', tag: 'COACHES', num: '40+', label: 'Coaches', delay: 'reveal--delay-2' },
+  { src: '/assets/team3.jpg', alt: 'Karateka in white gi at sunrise', tag: 'COACHES', num: '40+', label: 'Coaches', delay: 'reveal--delay-2' },
 ]
 
 export default function Everything() {

@@ -1,7 +1,6 @@
 export default function Sensei() {
   return (
     <section className="sensei" id="sensei" data-screen-label="07 Sensei">
-      <h2 className="sensei__mega" aria-hidden="true">SAMBATH</h2>
       <div className="wrap sensei__inner">
         <div className="sensei__media reveal">
           <img src="/assets/sensei.jpg" alt="Sensei Sambath portrait" loading="lazy" />
