@@ -79,15 +79,17 @@ section { position: relative; }
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  transition: background-color .35s ease, backdrop-filter .35s ease, border-color .35s ease, color .35s ease;
   color: var(--cream);
   border-bottom: 1px solid transparent;
-}
-.nav.is-solid {
   background: rgba(4, 21, 20, 0.88);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
   border-bottom-color: rgba(231, 230, 226, 0.08);
+  transform: translateY(-110%);
+  transition: transform .45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav--visible {
+  transform: translateY(0);
 }
 .nav__brand {
   display: flex; align-items: center; gap: 12px;
@@ -731,6 +733,7 @@ section { position: relative; }
   text-transform: uppercase;
   white-space: nowrap;
   pointer-events: none;
+  left: 18%;
 }
 .sensei__inner {
   position: relative;

@@ -2,21 +2,21 @@ import RevealHeadline from './RevealHeadline'
 
 const testimonials = [
   {
-    quote: 'Karate gave me a quiet mind in a loud world.',
-    name: 'Aravind R.',
-    role: 'Brown Belt · 4 years',
+    quote: 'Run by highly skilled, passionate and dedicated professionals providing result oriented training.',
+    name: 'Binesh Madhuripu',
+    role: 'Google review',
     delay: '',
   },
   {
-    quote: 'My daughter walks taller. The dojo became her second home.',
-    name: 'Lakshmi Menon',
-    role: 'Parent · Attingal',
+    quote: 'a great way to channel your ability to become a champion',
+    name: 'Antoksk',
+    role: 'Google review',
     delay: 'reveal--delay-1',
   },
   {
-    quote: "Sensei Sambath doesn't teach karate — he teaches a way of being.",
-    name: 'Joshua Mathew',
-    role: 'Black Belt · National Medallist',
+    quote: "Attingal karate team has one of the best athlete friendly atmosphere. They always brings a fun and logic oriantal ways to learn karate.",
+    name: 'Resmipriya S Nair',
+    role: 'Google review',
     delay: 'reveal--delay-2',
   },
 ]
@@ -27,7 +27,7 @@ export default function Testimonials() {
       <div className="wrap">
         <div className="testimonials__head">
           <RevealHeadline tag="h2" className="testimonials__title display">
-            What our students say
+            Reviews from the web.
           </RevealHeadline>
           <p className="testimonials__lede reveal reveal--delay-1">
             Every black belt was once a beginner who chose not to give up. Hear from those walking the way.

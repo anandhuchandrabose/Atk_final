@@ -1,17 +1,22 @@
 import { useEffect, useState } from 'react'
 
 export default function Nav() {
-  const [solid, setSolid] = useState(false)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setSolid(window.scrollY > 60)
-    document.addEventListener('scroll', onScroll, { passive: true })
-    onScroll()
-    return () => document.removeEventListener('scroll', onScroll)
+    const hero = document.getElementById('top')
+    if (!hero) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setVisible(entry.isIntersecting),
+      { threshold: 0 }
+    )
+    observer.observe(hero)
+    return () => observer.disconnect()
   }, [])
 
   return (
-    <nav className={`nav${solid ? ' is-solid' : ''}`} aria-label="Primary">
+    <nav className={`nav${visible ? ' nav--visible' : ''}`} aria-label="Primary">
       <a className="nav__brand" href="#top" aria-label="Attingal Karate home">
         <img src="/assets/logo.png" alt="Attingal Karate logo" className="nav__logo-img" />
       </a>
@@ -19,7 +24,6 @@ export default function Nav() {
         <li><a href="#way">About us</a></li>
         <li><a href="#everything">Gallery</a></li>
         <li><a href="#community">Community</a></li>
-        {/* <li><a href="#sensei">Sensei</a></li> */}
         <li><a href="#coaches">Coaches</a></li>
         <li><a href="#gallery">Contact Us</a></li>
       </ul>
