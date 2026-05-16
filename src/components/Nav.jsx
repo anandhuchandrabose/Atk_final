@@ -19,7 +19,7 @@ export default function Nav() {
         <li><a href="#way">About us</a></li>
         <li><a href="#everything">Gallery</a></li>
         <li><a href="#community">Community</a></li>
-        <li><a href="#sensei">Sensei</a></li>
+        {/* <li><a href="#sensei">Sensei</a></li> */}
         <li><a href="#coaches">Coaches</a></li>
         <li><a href="#gallery">Contact Us</a></li>
       </ul>
